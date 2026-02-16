@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascripts.js"></script>
+    <script src="https://kit.fontawesome.com/cb9b236eb0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+
+            <div class="navbar">
+
+                <div class="logo-container">
+                    <div class="logo-group">
+                        <i class="fa-solid fa-p" id="pm"></i>
+                        <span class="logo-text">ankaj</span>
+                    </div>
+                    <div class="logo-group">
+                        <i class="fa-solid fa-m"></i>
+                        <span class="logo-text">ishra</span>
+                    </div>
+                </div>
+                <nav>
+                    <ul li="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-sharp-duotone fa-solid fa-xmark" id="small" onclick="closemenu()"></i>
+                    </ul>
+                </nav>
+                <i class="fa-solid fa-list" id="small" onclick="openmenu()"></i>
+            </div>
+
+            <div class="hero-section">
+
+                <div class="hero-section-left">
+
+                    <div class="hero-section-heading">
+                        Hi! Pankaj Mishra
+                    </div>
+
+                    <div class="hero-section-heading hero-section-subheading">
+                        I am a <span class="role"></span>
+                    </div>
+
+                    <div class="hero-section-description">
+                        I am a passionate Software Engineering student with a strong interest in building scalable and efficient applications. I enjoy solving real-world problems through clean and optimized code. My areas of interest include web development, backend technologies, and software design. I am continuously learning new technologies to improve my skills and contribute effectively to innovative projects.
+                    </div>
+
+                    <div class="btn-pink" id="btn">Hire me</div>
+
+                </div>
+
+                <div class="hero-section-right">
+
+                    <div class="icons icon-dots">
+                        <img src="images/dots.png">
+                    </div>
+                    <div class="icons icon-cube">
+                        <img src="images/cube.png">
+                    </div>
+                    <div class="icons icon-circle">
+                        <img src="images/circle.png">
+                    </div>
+                    <div class="icons icon-zigzag">
+                        <img src="images/zigzags.png">
+                    </div>
+                    <div class="icons icon-plus">
+                        <img src="images/plus.png">
+                    </div>
+                    <div class="icons user-image">
+                        <img src="images/pankaj.jpg" id="pankaj">
+                    </div>
+
+                </div>
+
+                <div class="faded-text">Pankaj Mishra</div>
+            </div>
+        </div>
+        <!-------------------------------------about me--------------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./images/pankaj_pic.jpeg" class="pic">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            I am currently pursuing my post-graduation in MCA, where I am strengthening my knowledge in software development and emerging technologies. I am passionate about learning new technologies and exploring innovative tools. In my free time, I enjoy playing games, which helps me relax and improve my strategic thinking skills.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI?UX</span><br>Designing WEB/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>App Development</span><br>Building Android/IOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>UI?UX</span><br>Designing WEB/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>App Development</span><br>Null</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" ID="Education">
+                            <ul>
+                                <li><span>MCA</span><br>Madan Mohan Malaviya University of Technology</li>
+                                <li><span>B.Sc(Cs)</span><br>Ewing Christian College</li>
+                                <li><span>Class-12</span><br>Maharishi Vidya Mandir</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--------------------------------------services---------------------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>I specialize in designing clean, responsive, and user-friendly websites. My focus is on creating visually appealing designs that provide a smooth and engaging user experience. I aim to combine creativity with functionality to build modern and impactful web interfaces.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Competitive Programming</h2>
+                        <p>I actively practice competitive programming to strengthen my problem-solving and logical thinking skills. It helps me write efficient and optimized code under time constraints. Through continuous practice, I aim to improve my algorithmic knowledge and coding efficiency.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>DSA</h2>
+                        <p>I have a strong foundation in Data Structures and Algorithms using Java. I regularly practice solving problems to improve my understanding of concepts like arrays, linked lists, stacks, queues, trees, and graphs. This helps me write efficient, optimized, and scalable solutions for real-world applications.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!------------------work-------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/work.jpeg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>I worked on designing a social media application focused on user interaction, seamless communication, and an intuitive interface. The app includes features like user profiles, posts, likes, and real-time updates. My goal was to create a scalable and user-friendly platform that enhances digital connectivity and engagement.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/music.jpeg">
+                  <div class="layer">
+                    <h3>Music App</h3>
+                    <p>I designed a music application that provides a smooth and engaging listening experience. The app features playlist creation, song streaming, search functionality, and a user-friendly interface. My focus was on building a responsive design with seamless navigation to enhance user experience and performance.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/shopping.jpeg">
+                  <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>I designed an online shopping application focused on delivering a smooth and secure user experience. The app includes features like product browsing, search and filter options, cart management, and secure checkout. My goal was to create a responsive, user-friendly platform that ensures easy navigation and efficient performance.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+</div>
+
+<!------------------------------contact  me---------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>pankajmishra@875694@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone-flip"></i>8756949709</p>
+                <div class="social-icons">
+                <a href="https://www.facebook.com/share/1KRQ2s8Wvt/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/pankaj_mishra94?t=mCl_nUuS0m8KTD6N8qEDrw&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/pankaj_mishra_87?igsh=ZjN3YmZobzl4N2Nj"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/pankaj-mishra-43b289254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="./images/Pankaj_CV .pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">
+    <p>copyright @pankaj. Made with <i class="fa-solid fa-heart"></i></p>
+</div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a10656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+            strings: [
+                "Full Stack Developer",
+                "Web Developer",
+                "Backend  Developer",
+                "Coder",
+                "Competitive Programmer"
+            ],
+            loop: true,
+            typeSpeed: 100,
+            backspeed: 80,
+            backDelay: 1000,
+        })
+</script>
+<script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu =document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxUZ5gHC1YNfofdJl1KcEUStDfjW-41uOf81-hd70brXyaMlzZlq0UWa3aaQLjs-Bnn-g/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function()  {
+            msg.innerHTML =""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+
+</html>
